@@ -1,41 +1,101 @@
-# Employee Payroll Management System - Backend
+# Employee Payroll Management System
 
-A backend application for managing employees, attendance, leave, payroll, and payslips.
+A full-stack web application for managing employees, attendance, leave, payroll, and payslips.
 
-## 🚀 Technologies Used
+The application is built using **React.js** for the frontend, **Spring Boot** for the backend, and **MySQL** for database management.
 
+---
+
+## Features
+
+### Employee Management
+- Add new employees
+- View employee details
+- Edit employee information
+- Delete employees
+
+### Attendance Management
+- Manage employee attendance records
+- Add attendance records
+- Edit attendance records
+- Delete attendance records
+
+### Leave Management
+- Manage employee leave records
+- Add leave records
+- Edit leave information
+- Delete leave records
+
+### Payroll Management
+- Manage employee payroll information
+- Add payroll records
+- Edit payroll records
+- Delete payroll records
+
+### Payslip Management
+- View employee payslip information
+- Generate payslip PDF
+- Manage payroll-related payslip details
+
+### Dashboard
+- Provides an overview of employee and payroll-related information.
+
+---
+
+## Technologies Used
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend
 - Java
 - Spring Boot
 - Spring Data JPA
-- MySQL
-- Maven
 - REST APIs
+- Maven
 
-## 📌 Features
+### Database
+- MySQL
 
-- Employee Management
-- Employee Attendance Management
-- Leave Management
-- Payroll Management
-- Payslip Management
-- Dashboard APIs
-- MySQL Database Integration
+### Development Tools
+- IntelliJ IDEA
+- Visual Studio Code
+- Git
+- GitHub
 
-## 📂 Project Structure
+---
+
+## Application Architecture
 
 ```text
-src/
-└── main/
-    └── java/
-        └── com/
-            └── payroll/
-                └── employee/
-                    ├── attendance/
-                    ├── controller/
-                    ├── dashboard/
-                    ├── entity/
-                    ├── leave/
-                    ├── payroll/
-                    ├── repository/
-                    ├── service/
-                    └── EmployeePayrollApplication.java
+React.js Frontend
+       |
+       | REST API Requests
+       v
+Spring Boot Backend
+       |
+       | JPA / Hibernate
+       v
+MySQL Database
+
+employee-payroll-management-system-v2/
+|
+|-- backend/
+|   |-- src/
+|   |-- pom.xml
+|   |-- README.md
+|   `-- .gitignore
+|
+|-- frontend/
+|   |-- public/
+|   |-- src/
+|   |-- package.json
+|   |-- README.md
+|   `-- .gitignore
+|
+|-- .gitignore
+`-- README.md
