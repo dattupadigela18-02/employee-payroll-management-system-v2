@@ -82,6 +82,8 @@ Spring Boot Backend
        v
 MySQL Database
 
+Project Structure
+
 employee-payroll-management-system-v2/
 |
 |-- backend/
@@ -99,3 +101,4 @@ employee-payroll-management-system-v2/
 |
 |-- .gitignore
 `-- README.md
+
