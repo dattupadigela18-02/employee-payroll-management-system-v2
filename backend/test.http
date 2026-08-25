@@ -1,0 +1,163 @@
+### Get all employees
+GET http://localhost:8080/api/employees
+
+
+### Add employee
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "firstName": "Dattu",
+  "lastName": "Kumar",
+  "email": "dattu@example.com",
+  "phone": "9876543210",
+  "department": "IT",
+  "role": "Software Developer",
+  "salary": 45000,
+  "joiningDate": "2026-08-10"
+}
+
+### Update employee
+PUT http://localhost:8080/api/employees/1
+Content-Type: application/json
+
+{
+  "firstName": "Dattu",
+  "lastName": "Kumar",
+  "email": "dattu@example.com",
+  "phone": "9876543210",
+  "department": "IT",
+  "role": "Senior Software Developer",
+  "salary": 55000,
+  "joiningDate": "2026-08-10"
+}
+
+### Delete employee
+DELETE http://localhost:8080/api/employees/1
+
+### Get all employees
+GET http://localhost:8080/api/employees
+
+### Add attendance
+POST http://localhost:8080/api/attendance
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "date": "2026-08-11",
+  "status": "PRESENT"
+}
+
+### Get all attendance
+GET http://localhost:8080/api/attendance
+
+### Update attendance
+PUT http://localhost:8080/api/attendance/1
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "date": "2026-08-11",
+  "status": "ABSENT"
+}
+
+###Delete attendance
+DELETE http://localhost:8080/api/attendance/1
+
+### Add leave
+POST http://localhost:8080/api/leaves
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "startDate": "2026-08-15",
+  "endDate": "2026-08-17",
+  "leaveType": "CASUAL",
+  "status": "PENDING",
+  "reason": "Family function"
+}
+
+### Get all leaves
+GET http://localhost:8080/api/leaves
+
+### Update leave
+PUT http://localhost:8080/api/leaves/1
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "startDate": "2026-08-15",
+  "endDate": "2026-08-17",
+  "leaveType": "CASUAL",
+  "status": "APPROVED",
+  "reason": "Family function"
+}
+
+### Delete leave
+DELETE http://localhost:8080/api/leaves/1
+
+### Get all leaves
+GET http://localhost:8080/api/leaves
+
+### Add payroll
+POST http://localhost:8080/api/payroll
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "month": 8,
+  "year": 2026,
+  "basicSalary": 55000,
+  "workingDays": 26,
+  "presentDays": 23,
+  "leaveDays": 3,
+  "deductions": 2000
+}
+
+#### Get all payroll
+GET http://localhost:8080/api/payroll
+
+### Update payroll
+PUT http://localhost:8080/api/payroll/1
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "month": 8,
+  "year": 2026,
+  "basicSalary": 60000,
+  "workingDays": 26,
+  "presentDays": 23,
+  "leaveDays": 3,
+  "deductions": 3000
+}
+
+### Delete payroll
+DELETE http://localhost:8080/api/payroll/1
+
+### Get all payroll
+GET http://localhost:8080/api/payroll
+
+### Create payroll for payslip
+POST http://localhost:8080/api/payroll
+Content-Type: application/json
+
+{
+  "employeeId": 2,
+  "month": 8,
+  "year": 2026,
+  "basicSalary": 60000,
+  "workingDays": 26,
+  "presentDays": 23,
+  "leaveDays": 3,
+  "deductions": 3000
+}
+
+### Generate payslip PDF
+GET http://localhost:8080/api/payroll/4/payslip
+
+### Generate professional payslip
+GET http://localhost:8080/api/payroll/4/payslip
+
+### Get Dashboard
+GET http://localhost:8080/api/dashboard
